@@ -1196,6 +1196,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
       <span class="p">}</span>
       <span class="dl">"</span><span class="s2">observability</span><span class="dl">"</span><span class="p">:</span>
       <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">healthStatus</span><span class="dl">"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">logsURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://logs.com</span><span class="dl">"</span>
          <span class="dl">"</span><span class="s2">dashboardURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://dashboard.com</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">uptimeURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://uptime.com</span><span class="dl">"</span>
@@ -1329,6 +1330,12 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>element</td>
 <td>-</td>
 <td>Observability is a superset of monitoring. It provides not only high-level overviews of the system’s health but also highly granular insights into the implicit failure modes of the system. In addition, an observable system furnishes ample context about its inner workings, unlocking the ability to uncover deeper, systemic issues.</td>
+</tr>
+<tr>
+<td>healthStatus</td>
+<td>boolean</td>
+<td>true/false</td>
+<td>The usability of the data product can be determined through (an internal automated) review that assesses the data quality, accuracy, and other characteristics to ensure its usability. In this process, a value of &#39;true&#39; indicates that the automated review has deemed the product to be usable. Conversely, a value of &#39;false&#39; signifies that the automated review has identified deficiencies or errors that render the product unusable.</td>
 </tr>
 <tr>
 <td>logsURL</td>
