@@ -601,6 +601,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
   <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">draft</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">version</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0.1</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">versionNotes</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">New version with additional details such more accurate pet details</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">issues</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">The current issues include incorrect information in the dog breeds. The resolution for these problems is planned for the next     update, scheduled to be released on July 15th, 2023.</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">categories</span><span class="dl">"</span><span class="p">:[</span><span class="dl">"</span><span class="s2">pets</span><span class="dl">"</span><span class="p">],</span>
   <span class="dl">"</span><span class="s2">standards</span><span class="dl">"</span><span class="p">:[</span><span class="dl">"</span><span class="s2">ISO 24631-6</span><span class="dl">"</span><span class="p">],</span>
   <span class="dl">"</span><span class="s2">tags</span><span class="dl">"</span><span class="p">:[</span><span class="dl">"</span><span class="s2">pet</span><span class="dl">"</span><span class="p">],</span>
@@ -686,7 +687,13 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>versionNotes</td>
 <td>string</td>
 <td>-</td>
-<td>Additional information about the version</td>
+<td>Additional information about the version.</td>
+</tr>
+<tr>
+<td>issues</td>
+<td>string</td>
+<td>-</td>
+<td>There may be errors in the data product that require corrections. These issues will be briefly described to users, along with information about when the fixes will be implemented.</td>
 </tr>
 <tr>
 <td>contentSample</td>
@@ -755,12 +762,12 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <p>Supported pricing models include:</p>
 
 <ol>
-<li>recurring time period based (day, week, month, year) plans</li>
-<li>one time payments plans</li>
-<li>pay-as-you-go plans</li>
-<li>revenue sharing plans</li>
-<li>data volume plan</li>
-<li>dynamic pricing (high and low limits for automated pricing)</li>
+<li>Recurring time period based (day, week, month, year) plans</li>
+<li>One time payments plans</li>
+<li>Pay-as-you-go plans</li>
+<li>Revenue sharing plans</li>
+<li>Data volume plan</li>
+<li>Dynamic pricing (high and low limits for automated pricing)</li>
 <li>Pay what you want plans</li>
 <li>Freemium</li>
 <li>Open data</li>
@@ -844,8 +851,8 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <tr>
 <td><strong>unit</strong></td>
 <td>string</td>
-<td>One of: one-time-payment, pay-per-use, recurring, revenue-sharing, data-volume , pay-what-you-want, freemium</td>
-<td><strong>REQUIRED</strong> One-time-payment is for single time purchase purposes, further purchaces are not intended to continue under same agreement. <br/><br/> <em>Pay-per-use</em> is intended for continuous usage and price set is for each successful usage action. <br/><br/> <em>Recurrring</em> is intended for continuous time period plans. <br/><br/><em>Revenue sharing</em> is a performance-based income model. An effective revenue sharing deal structure is offering your expertise to a business owner to help them grow their business. In return, you get paid a percentage of the revenue as a royalty fee. <br/><br/> <em>Freemium</em> is for free access. Use this option also for open data. <br/><br/> <em>Data-volume</em> is for data amount based pricing in which customer pays based on the served data amount. The price is always for 1GB of data. <br/><br/> <em>pay-what-you-want</em>  is a pricing system where buyers pay any desired amount for a given commodity, sometimes including zero. In some cases, a minimum (floor) price may be set, and/or a suggested price may be indicated as guidance for the buyer. The buyer can also select an amount higher than the standard price for the commodity. If the floor price is set, use <em>minPrice</em> attribute. <br/><br/> <em>open-data</em>  is an explicit pricing plan category for open data.</td>
+<td>One of: one-time-payment, pay-per-use, recurring, revenue-sharing, data-volume , pay-what-you-want, pre-payment, freemium</td>
+<td><strong>REQUIRED</strong> One-time-payment is for single time purchase purposes, further purchaces are not intended to continue under same agreement. <br/><br/> <em>Pay-per-use</em> is intended for continuous usage and price set is for each successful usage action. <br/><br/> <em>Recurrring</em> is intended for continuous time period plans. <br/><br/><em>Revenue sharing</em> is a performance-based income model. An effective revenue sharing deal structure is offering your expertise to a business owner to help them grow their business. In return, you get paid a percentage of the revenue as a royalty fee. <br/><br/> <em>Freemium</em> is for free access. Use this option also for open data. <br/><br/><em>Prepayment</em> refers to the process of depositing credits into the platform in advance, ensuring that if the balance becomes too low, it can be automatically replenished. Once the balance reaches zero, the service is temporarily suspended until the account is pre-paid again – similar to the functionality of the Starbucks app.<br/><br/> <em>Freemium</em> is for free access. Use this option also for open data.<br/><br/> <em>Data-volume</em> is for data amount based pricing in which customer pays based on the served data amount. The price is always for 1GB of data. <br/><br/> <em>pay-what-you-want</em>  is a pricing system where buyers pay any desired amount for a given commodity, sometimes including zero. In some cases, a minimum (floor) price may be set, and/or a suggested price may be indicated as guidance for the buyer. The buyer can also select an amount higher than the standard price for the commodity. If the floor price is set, use <em>minPrice</em> attribute.</td>
 </tr>
 <tr>
 <td><strong>maxTransactionQuantity</strong></td>
