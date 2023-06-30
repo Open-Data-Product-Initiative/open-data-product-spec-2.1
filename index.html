@@ -975,7 +975,8 @@ The JSON examples are not based on any real data product, but exemplify the usag
     <span class="dl">"</span><span class="s2">dataLineageTool</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Collibra</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">dataLineageOutput</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://192.168.10.1/lineage.json</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">hashType</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">SHA-2</span><span class="dl">"</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">checksum</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">7b7444ab8f5832e9ae8f54834782af995d0a83b4a1d77a75833eda7e19b4c921</span><span class="dl">"</span>
+    <span class="dl">"</span><span class="s2">checksum</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">7b7444ab8f5832e9ae8f54834782af995d0a83b4a1d77a75833eda7e19b4c921</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">signatureType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">JWK</span><span class="dl">"</span>
   <span class="p">}</span>
 <span class="p">}</span>
 
@@ -1071,6 +1072,12 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>string</td>
 <td>any</td>
 <td>Script checksum.</td>
+</tr>
+<tr>
+<td>signatureType</td>
+<td>string</td>
+<td>any</td>
+<td>A public-key cryptosystem,such as JWK, PKCS#12, or PEM.</td>
 </tr>
 </tbody></table>
 <h1 id='data-access'>Data Access</h1>
