@@ -771,6 +771,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <li>Pay what you want plans</li>
 <li>Freemium</li>
 <li>Open data</li>
+<li>Value-based</li>
 </ol>
 
 <p><button data-tf-popup="Q1Zo6wE5" data-tf-iframe-props="title=Customer Feedback Survey" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FA6B05;color:#000000;font-size:17px;border-radius:3px;padding:0 28px;font-weight:bold;height:42.5px;cursor:pointer;line-height:42.5px;text-align:center;margin:0;text-decoration:none;">Raise an issue</button><script src="//embed.typeform.com/next/embed.js"></script></p>
@@ -851,8 +852,8 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <tr>
 <td><strong>unit</strong></td>
 <td>string</td>
-<td>One of: one-time-payment, pay-per-use, recurring, revenue-sharing, data-volume , pay-what-you-want, freemium, open-data</td>
-<td><strong>REQUIRED</strong> One-time-payment is for single time purchase purposes, further purchaces are not intended to continue under same agreement. <br/><br/> <em>Pay-per-use</em> is intended for continuous usage and price set is for each successful usage action. <br/><br/> <em>Recurrring</em> is intended for continuous time period plans. <br/><br/><em>Revenue sharing</em> is a performance-based income model. An effective revenue sharing deal structure is offering your expertise to a business owner to help them grow their business. In return, you get paid a percentage of the revenue as a royalty fee. <br/><br/> <em>Freemium</em> is for free access. Use this option also for open data. <br/><br/> <em>Data-volume</em> is for data amount based pricing in which customer pays based on the served data amount. The price is always for 1GB of data. <br/><br/> <em>pay-what-you-want</em>  is a pricing system where buyers pay any desired amount for a given commodity, sometimes including zero. In some cases, a minimum (floor) price may be set, and/or a suggested price may be indicated as guidance for the buyer. The buyer can also select an amount higher than the standard price for the commodity. If the floor price is set, use <em>minPrice</em> attribute. <br/><br/> <em>open-data</em>  is an explicit pricing plan category for open data. Open data should be free by default, but can in some cases have price as well.</td>
+<td>One of: One-time-payment, Pay-per-use, Recurring, Revenue-sharing, Data-volume , Pay-what-you-want, Freemium, Open-data, Value-based</td>
+<td><strong>REQUIRED</strong> One-time-payment is for single time purchase purposes, further purchaces are not intended to continue under same agreement. <br/><br/> <em>Pay-per-use</em> is intended for continuous usage and price set is for each successful usage action. <br/><br/> <em>Recurrring</em> is intended for continuous time period plans. <br/><br/><em>Revenue sharing</em> is a performance-based income model. An effective revenue sharing deal structure is offering your expertise to a business owner to help them grow their business. In return, you get paid a percentage of the revenue as a royalty fee. <br/><br/> <em>Freemium</em> is for free access. Use this option also for open data. <br/><br/> <em>Data-volume</em> is for data amount based pricing in which customer pays based on the served data amount. The price is always for 1GB of data. <br/><br/> <em>Pay-what-you-want</em>  is a pricing system where buyers pay any desired amount for a given commodity, sometimes including zero. In some cases, a minimum (floor) price may be set, and/or a suggested price may be indicated as guidance for the buyer. The buyer can also select an amount higher than the standard price for the commodity. If the floor price is set, use <em>minPrice</em> attribute. <br/><br/> <em>Open-data</em>  is an explicit pricing plan category for open data. By default open data should be free, but in some cases it can have a price. <br/><br/> <em>Value-based</em> is value-based selling unit. Present the outcome of your story with solid data and a measurable impact with help of <em>offering</em> attribute. Example: “We can lower the energy bill in heating by $8-13/square meter in a year. Try out simulator to calculate your value!”. Use optional <em>value-simulator</em> attribute to provide link (URL) to value simulator you have created.</td>
 </tr>
 <tr>
 <td><strong>maxTransactionQuantity</strong></td>
@@ -948,6 +949,12 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>Integer</td>
 <td>-</td>
 <td>The maximum amount of data transferred during the billing duration. Unit is GB.</td>
+</tr>
+<tr>
+<td>value-simulator</td>
+<td>url</td>
+<td>valid url</td>
+<td>Intended to be used with <em>value-based</em> pricing plan. Provide url to value simulator in which customer can see the value in various cases. In the simulator customer might be able to input own variables to match their exact case and see the gained value.</td>
 </tr>
 </tbody></table>
 
