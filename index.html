@@ -972,6 +972,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <span class="dl">"</span><span class="s2">dataOps</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
   <span class="dl">"</span><span class="s2">infrastructure</span><span class="dl">"</span><span class="p">:{</span>
     <span class="dl">"</span><span class="s2">platform</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Azure</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">region</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">West US 2 (Washington)</span><span class="dl">"</span><span class="p">;</span>
     <span class="dl">"</span><span class="s2">storageTechnology</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Azure SQL</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">storageType</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">sql</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">containerTool</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">helm</span><span class="dl">"</span><span class="p">,</span>
@@ -1008,6 +1009,12 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>string</td>
 <td>any</td>
 <td>Platform infrastructure, such as AWS, GCP, Azure.</td>
+</tr>
+<tr>
+<td>region</td>
+<td>string</td>
+<td>any</td>
+<td>Provide details of cloud region of AWS, Azure or alike. Examples for AWS: US West (Oregon), Canada (Central), US East (N. Virginia), US East (Ohio). Examples for Azure: Canada Central (Toronto), East US 2 (Virginia), West US 2 (Washington)</td>
 </tr>
 <tr>
 <td>storageTechnology</td>
